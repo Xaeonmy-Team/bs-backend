@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :syncs 
   resources :artists
   devise_for :users,
     path: '',
@@ -12,3 +13,4 @@ Rails.application.routes.draw do
       registrations: 'users/registrations'
     }
 end
+

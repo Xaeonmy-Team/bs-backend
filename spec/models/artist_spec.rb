@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Artist, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:user) { User.create(
+      email: 'test@example.com',
+      password: 'password',
+      password_confirmation: 'password'
+      )
+    }
+  end
 end
+
+
