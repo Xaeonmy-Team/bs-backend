@@ -9,5 +9,3 @@ RSpec.describe Artist, type: :model do
     }
   end
 end
-
-

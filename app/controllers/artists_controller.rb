@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
     def index
-        artist = Artist.all
+        artists = Artist.all
         render json: artist
-        end
+    end
 end
