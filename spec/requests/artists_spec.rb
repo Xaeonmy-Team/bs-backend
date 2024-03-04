@@ -1,16 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe "Artists", type: :request do
-  let(:user) { User.create(
-    email: 'test@example.com',
-    password: 'password',
-    password_confirmation: 'password'
-    )
-  }
+  
 
   describe "GET /index" do
     it 'gets a list of artists' do
-      artist = user.artists.create(
+      artist = Artist.create(
         name: 'Taylor Swift',
         discography: 'https://www.allmusic.com/artist/taylor-swift-mn0000472102#discography',
         tours: 'https://www.songkick.com/artists/217815-taylor-swift',

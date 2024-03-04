@@ -18,9 +18,6 @@ RSpec.describe Sync, type: :model do
   }
   it "should validate name" do
     sync = Sync.create(user_id: user.id, artist_id: artist.id)
-    p user
-    p artist
-    p sync
     expect(sync.errors[:name]).to_not be_empty
   end
 
