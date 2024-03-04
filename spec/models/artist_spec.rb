@@ -7,7 +7,4 @@ RSpec.describe Artist, type: :model do
       password_confirmation: 'password'
       )
     }
-  end
 end
-
-

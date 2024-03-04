@@ -7,6 +7,12 @@ class SyncsController < ApplicationController
         render json: sync.errors, status: 422
       end
     end
+
+    def index
+      syncs = Sync.all
+      render json: syncs
+
+    end
   
     def destroy
       sync = Sync.find_by(id: params[:id])
